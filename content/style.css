@@ -226,4 +226,13 @@ li:last-child {
     #bottombar {
         display: none;
     }
+
+    #android-window {
+        height: auto;
+        padding-top: 56px;
+    }
+    #menubar {
+        position: fixed;
+        margin-top: -56px;
+    }
 }
