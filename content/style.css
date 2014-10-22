@@ -114,7 +114,7 @@ label {
     padding: 0px;
 }
 
-#sidemenu li {
+#sidemenu li a {
     color: #f0f0f0;
     font-size: 18px;
     display: block;
