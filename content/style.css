@@ -224,7 +224,7 @@ li:last-child {
     }
 
     #sidemenu {
-        margin-top: 56px;
+        position: fixed;
     }
 
     #bottombar {
