@@ -3,21 +3,48 @@
     app.config(function ($routeProvider, $locationProvider) {
         $locationProvider.html5Mode(true);
         $routeProvider
-            .when('/about', 
-                {
-                    controller: 'sortsiteController',
-                    templateUrl: '/app/partials/about.html'
-                })
-            .when('/sorting', 
-                {
-                    controller: 'sortsiteController',
-                    templateUrl: '/app/partials/sorting.html'
-                })
             .when('/', 
                 {
-                    controller: 'sortsiteController',
-                    templateUrl: '/app/partials/welcome.html'
+                    controller: 'artnetController',
+                    templateUrl: '/app/partials/museum.html'
                 })
+            .when('/calendar', 
+                {
+                    controller: 'artnetController',
+                    templateUrl: '/app/partials/calendar.html'
+                })
+            .when('/explore', 
+                {
+                    controller: 'artnetController',
+                    templateUrl: '/app/partials/explore.html'
+                })
+            .when('/list', 
+                {
+                    controller: 'artnetController',
+                    templateUrl: '/app/partials/list.html'
+                })
+            .when('/map', 
+                {
+                    controller: 'artnetController',
+                    templateUrl: '/app/partials/map.html'
+                })
+            .when('/museum', 
+                {
+                    controller: 'artnetController',
+                    templateUrl: '/app/partials/museum.html'
+                })
+            
+            .when('/profile', 
+                {
+                    controller: 'artnetController',
+                    templateUrl: '/app/partials/profile.html'
+                })
+            .when('/settings', 
+                {
+                    controller: 'artnetController',
+                    templateUrl: '/app/partials/settings.html'
+                })
+            
             .otherwise({ redirectTo: '/' });
     });
 
