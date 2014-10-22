@@ -6,7 +6,7 @@
             .when('/', 
                 {
                     controller: 'artnetController',
-                    templateUrl: '/app/partials/museum.html'
+                    templateUrl: '/app/partials/artnet.html'
                 })
             .when('/calendar', 
                 {
