@@ -223,6 +223,10 @@ li:last-child {
         display: none;
     }
 
+    #sidemenu {
+        margin-top: 56px;
+    }
+
     #bottombar {
         display: none;
     }
