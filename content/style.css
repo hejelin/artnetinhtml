@@ -101,7 +101,7 @@ label {
     position: absolute;
     z-index: 5;
     top: 56px;
-    display: block;
+    display: none;
 }
 
 #sidemenu-top {
@@ -217,5 +217,13 @@ li:last-child {
         background: #eee;
         padding: 0px;
         margin: 0px;
+        height: auto;
+    }
+    #statusbar {
+        display: none;
+    }
+
+    #bottombar {
+        display: none;
     }
 }
