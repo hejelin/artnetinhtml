@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en" ng-app="artnet">
+<head>
+	<meta charset="utf-8">
+
+	<title>Artnet</title>
+	<meta name="leftovers" content="Artnet">
+
+	<link rel="stylesheet" href="content/style.css" type="text/css" />
+
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js" type="text/javascript"></script>
+	<script src="scripts/angular.js" type="text/javascript"></script>
+	<script src="scripts/angular-route.js" type="text/javascript"></script>
+
+	<script src="app/app.js" type="text/javascript"></script>
+	<script src="app/controllers/controllers.js" type="text/javascript"></script>
+	<base href="/" />
+
+	<script type="text/javascript">    
+	$.ready(function () {
+		$("#menu-indicator").click( function () {
+				$('#sidemenu').toggle('slide', 'left');
+				alert();
+			});
+	});
+	</script>
+</head>
+
+<body>
+	<div id="nexus5">
+		<div id="statusbar"></div>
+
+		<div id="android-window">
+			<div id="sidemenu">
+				<div id="sidemenu-header"></div>
+			</div>
+
+			<div id="menubar"><img src="/content/bilder/ic_drawer.png" id="menu-indicator"><h1>Upptäck</h1><img src="/content/bilder/ic_action_search.png" id="search"></div>
+
+			<div ng-view=""></div>
+		</div>
+
+		<div id="bottombar"></div>
+	</div>
+</body>
+</html>
