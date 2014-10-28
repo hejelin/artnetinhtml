@@ -243,8 +243,6 @@ li:last-child {
     height: 300px;
 }
 
-
-
 /* -------------------- LIST --------------------- */
 
 .list-item {
@@ -264,6 +262,29 @@ li:last-child {
     font-weight: bold;
     margin: 0 10px;
     margin-top: -20px;
+}
+
+/* -------------------- ARTPIECE ----------------- */
+
+.artpiece {
+    margin: 10px;
+}
+
+.artpiece p {
+    margin: 10px;
+}
+
+.artpiece h1 {
+    background: #e9573e;
+    padding: 5px 15px;
+}
+
+.artpiece img {
+    width: 100%;
+}
+
+.non-rate {
+    opacity: 0.3;
 }
 
 /* -------------------- CALENDAR ----------------- */

@@ -44,6 +44,16 @@
                     controller: 'artnetController',
                     templateUrl: '/app/partials/settings.html'
                 })
+            .when('/artpiece', 
+                {
+                    controller: 'artnetController',
+                    templateUrl: '/app/partials/artpiece.html'
+                })
+            .when('/artpiece-rate', 
+                {
+                    controller: 'artnetController',
+                    templateUrl: '/app/partials/artpiece-rate.html'
+                })
             
             .otherwise({ redirectTo: '/' });
     });

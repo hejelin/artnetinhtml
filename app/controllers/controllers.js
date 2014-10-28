@@ -1,10 +1,23 @@
 var app = angular.module('artnet');
 
 app.controller('artnetController', ['$scope', function ($scope){
-  $('#menu-indicator').click(toggleMenu);
+    $('#back-button').click(function(e) {
+      window.history.back('#/');
+    });
+
+    $('.list-item').click(function(e) {
+      window.location.assign('#/artpiece');
+    });
+
+    $('.latest-list-img').click(function(e) {
+      window.location.assign('#/artpiece-rate');
+    });
+
     $('#sidemenu').click(hideMenu);
     $(document).on('swiperight', showMenu);
     $(document).on('swipeleft', hideMenu);
+
+    $('#menu-indicator').click(toggleMenu);
 
     function toggleMenu() {
         $('#sidemenu').toggle('slide', 200);
