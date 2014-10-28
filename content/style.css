@@ -283,8 +283,19 @@ li:last-child {
     width: 100%;
 }
 
+.artpiece h2 {
+    font-weight: bold;
+    margin: 10px;
+    margin-top: 25px;
+}
+
 .non-rate {
-    opacity: 0.3;
+    opacity: 0.1;
+    margin-top: -15px;
+}
+
+.rate {
+    margin-top: -15px;
 }
 
 /* -------------------- CALENDAR ----------------- */

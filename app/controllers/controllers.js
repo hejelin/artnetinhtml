@@ -9,6 +9,12 @@ app.controller('artnetController', ['$scope', function ($scope){
       window.location.assign('#/artpiece');
     });
 
+    $('#rate').click(function(e) {
+      console.log('few');
+      $('#rate').src = "/content/bilder/rated.png";
+      console.log('HEJ');
+    });
+
     $('.latest-list-img').click(function(e) {
       window.location.assign('#/artpiece-rate');
     });
