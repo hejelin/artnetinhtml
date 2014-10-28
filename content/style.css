@@ -454,6 +454,7 @@ tr {
 
     #android-window {
         padding-top: 56px;
+        height: auto;
     }
     #menubar {
         position: fixed;
