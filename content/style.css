@@ -200,7 +200,6 @@ li:last-child {
 }
 
 .footer {
-    padding: 10px;
     border-top: solid 1px #e9573e;
     clear: both;
 }
@@ -216,6 +215,7 @@ li:last-child {
     width: 50%;
     float: left;
     text-align: center;
+    padding: 10px;
 }
 
 .comment {
@@ -280,7 +280,7 @@ li:last-child {
 }
 
 .artpiece img {
-    width: 100%;
+    width: 340px;
 }
 
 .artpiece h2 {
@@ -314,6 +314,10 @@ td {
 
 tr {
     height: 45px;
+}
+
+td:hover {
+    background: #ccc;
 }
 
 .event-mark {
@@ -369,6 +373,7 @@ tr {
     width: 100%;
     padding: 10px;
     background: #fb6e52;
+    color: #f0f0f0;
 }
 
 /* -------------------- PROFILE ------------------- */
@@ -405,7 +410,26 @@ tr {
 .achievement-list-img, .latest-list-img {
     border-radius: 50%;
     margin: 4px;
+    width: 55px;
+    height: 55px;
 }
+
+#rate {
+    width: 240px;
+    margin-left: 50px;
+}
+
+#redbox {
+    width: 50px;
+    height: 50px;
+    background: red;
+    margin-top: -107px;
+    position: absolute;
+    margin-left: 145px;
+    z-index: -1;
+}
+
+/* -------------------- SETTINGS ------------------ */
 
 .setting-label {
     color: #222;

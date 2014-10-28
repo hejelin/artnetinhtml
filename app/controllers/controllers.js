@@ -10,9 +10,11 @@ app.controller('artnetController', ['$scope', function ($scope){
     });
 
     $('#rate').click(function(e) {
-      console.log('few');
-      $('#rate').src = "/content/bilder/rated.png";
-      console.log('HEJ');
+      $('#redbox').animate({margin: '-150px 0 0 145px'}, 2000);  
+    });
+
+    $('.like').click(function(e) {
+      $('#likethis').attr('src', '/content/bilder/like-full.svg');
     });
 
     $('.latest-list-img').click(function(e) {
@@ -20,7 +22,9 @@ app.controller('artnetController', ['$scope', function ($scope){
     });
 
     $('#sidemenu').click(hideMenu);
+
     $(document).on('swiperight', showMenu);
+
     $(document).on('swipeleft', hideMenu);
 
     $('#menu-indicator').click(toggleMenu);
