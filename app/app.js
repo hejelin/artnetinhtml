@@ -25,7 +25,7 @@
                 })
             .when('/map', 
                 {
-                    controller: 'mapController',
+                    controller: 'artnetController',
                     templateUrl: '/app/partials/map.html'
                 })
             .when('/museum', 

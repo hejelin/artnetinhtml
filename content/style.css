@@ -196,6 +196,8 @@ li:last-child {
 .img-round {
     border-radius: 50%;
     margin: 10px;
+    width: 65px;
+    height: 65px;
     float: left;
 }
 
@@ -251,6 +253,8 @@ li:last-child {
 
 .list-item img {
     float: left;
+    width: 75px;
+    height: 75px;
     margin-right: 10px;
 }
 
@@ -283,6 +287,10 @@ li:last-child {
     width: 340px;
 }
 
+.artpiece img.non-rate {
+    width: 240px;
+}
+
 .artpiece h2 {
     font-weight: bold;
     margin: 10px;
@@ -296,6 +304,21 @@ li:last-child {
 
 .rate {
     margin-top: -15px;
+}
+
+#rate, .non-rate {
+    width: 240px;
+    margin-left: 50px;
+}
+
+#redbox {
+    width: 50px;
+    height: 50px;
+    background: red;
+    margin-top: -107px;
+    position: absolute;
+    margin-left: 145px;
+    z-index: -1;
 }
 
 /* -------------------- CALENDAR ----------------- */
@@ -412,21 +435,6 @@ td:hover {
     margin: 4px;
     width: 55px;
     height: 55px;
-}
-
-#rate {
-    width: 240px;
-    margin-left: 50px;
-}
-
-#redbox {
-    width: 50px;
-    height: 50px;
-    background: red;
-    margin-top: -107px;
-    position: absolute;
-    margin-left: 145px;
-    z-index: -1;
 }
 
 /* -------------------- SETTINGS ------------------ */
